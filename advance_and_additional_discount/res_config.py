@@ -65,7 +65,7 @@ class account_config_settings(models.TransientModel):
                 property_ids = property_obj.search([('name', '=', record[0])])
                 if property_ids:
                     #the property exist: modify it
-                    property_obj.write(property_ids, vals)
+                    property_ids.write(vals)
                 else:
                     #create the property
                     property_obj.create(vals)
