@@ -1,0 +1,1960 @@
+1    [XML-RPC-0] ERROR org.apache.xmlrpc.server.XmlRpcErrorLogger - Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: FATAL: password authentication failed for user "naresh"
+org.apache.xmlrpc.common.XmlRpcInvocationException: Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: FATAL: password authentication failed for user "naresh"
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:129)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "naresh"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:291)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:108)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:22)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:30)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:393)
+	at org.postgresql.Driver.connect(Driver.java:267)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:185)
+	at com.nantic.jasperreports.JasperServer.getConnection(JasperServer.java:277)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:221)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	... 6 more
+Caused by:
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "naresh"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:291)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:108)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.<init>(AbstractJdbc2Connection.java:125)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.<init>(AbstractJdbc3Connection.java:30)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.<init>(AbstractJdbc3gConnection.java:22)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.<init>(AbstractJdbc4Connection.java:30)
+	at org.postgresql.jdbc4.Jdbc4Connection.<init>(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:393)
+	at org.postgresql.Driver.connect(Driver.java:267)
+	at java.sql.DriverManager.getConnection(DriverManager.java:582)
+	at java.sql.DriverManager.getConnection(DriverManager.java:185)
+	at com.nantic.jasperreports.JasperServer.getConnection(JasperServer.java:277)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:221)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+0    [XML-RPC-0] ERROR org.apache.xmlrpc.server.XmlRpcErrorLogger - Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424097866188_55914: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424097866188_55914: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424097866188_55914: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424097866188_55914: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424097866188_55914: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424097866188_55914: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+org.apache.xmlrpc.common.XmlRpcInvocationException: Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424097866188_55914: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424097866188_55914: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424097866188_55914: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424097866188_55914: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424097866188_55914: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424097866188_55914: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:129)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424097866188_55914: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424097866188_55914: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424097866188_55914: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424097866188_55914: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424097866188_55914: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424097866188_55914: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	... 6 more
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424097866188_55914: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424097866188_55914: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424097866188_55914: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424097866188_55914: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424097866188_55914: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424097866188_55914: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+Caused by:
+net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424097866188_55914: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424097866188_55914: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424097866188_55914: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424097866188_55914: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424097866188_55914: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424097866188_55914: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424097866188_55914: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424097866188_55914: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424097866188_55914: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424097866188_55914: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424097866188_55914: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424097866188_55914: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+0    [XML-RPC-0] ERROR org.apache.xmlrpc.server.XmlRpcErrorLogger - Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105047642_501966: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105047642_501966: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105047642_501966: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105047642_501966: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105047642_501966: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105047642_501966: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+org.apache.xmlrpc.common.XmlRpcInvocationException: Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105047642_501966: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105047642_501966: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105047642_501966: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105047642_501966: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105047642_501966: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105047642_501966: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:129)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105047642_501966: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105047642_501966: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105047642_501966: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105047642_501966: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105047642_501966: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105047642_501966: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	... 6 more
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105047642_501966: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105047642_501966: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105047642_501966: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105047642_501966: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105047642_501966: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105047642_501966: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+Caused by:
+net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105047642_501966: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105047642_501966: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105047642_501966: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105047642_501966: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105047642_501966: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105047642_501966: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105047642_501966: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105047642_501966: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105047642_501966: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105047642_501966: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105047642_501966: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105047642_501966: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+1    [XML-RPC-0] ERROR org.apache.xmlrpc.server.XmlRpcErrorLogger - Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105598088_446081: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105598088_446081: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105598088_446081: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105598088_446081: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105598088_446081: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105598088_446081: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+org.apache.xmlrpc.common.XmlRpcInvocationException: Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105598088_446081: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105598088_446081: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105598088_446081: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105598088_446081: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105598088_446081: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105598088_446081: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:129)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105598088_446081: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105598088_446081: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105598088_446081: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105598088_446081: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105598088_446081: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105598088_446081: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	... 6 more
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105598088_446081: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105598088_446081: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105598088_446081: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105598088_446081: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105598088_446081: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105598088_446081: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+Caused by:
+net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105598088_446081: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105598088_446081: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105598088_446081: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105598088_446081: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105598088_446081: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105598088_446081: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105598088_446081: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105598088_446081: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105598088_446081: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105598088_446081: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105598088_446081: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105598088_446081: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+1    [XML-RPC-0] ERROR org.apache.xmlrpc.server.XmlRpcErrorLogger - Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105695356_719133: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105695356_719133: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105695356_719133: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105695356_719133: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105695356_719133: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105695356_719133: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+org.apache.xmlrpc.common.XmlRpcInvocationException: Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105695356_719133: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105695356_719133: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105695356_719133: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105695356_719133: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105695356_719133: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105695356_719133: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:129)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105695356_719133: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105695356_719133: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105695356_719133: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105695356_719133: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105695356_719133: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105695356_719133: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	... 6 more
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105695356_719133: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105695356_719133: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105695356_719133: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105695356_719133: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105695356_719133: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105695356_719133: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+Caused by:
+net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105695356_719133: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105695356_719133: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105695356_719133: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105695356_719133: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105695356_719133: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105695356_719133: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105695356_719133: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105695356_719133: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105695356_719133: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105695356_719133: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105695356_719133: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105695356_719133: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+1    [XML-RPC-0] ERROR org.apache.xmlrpc.server.XmlRpcErrorLogger - Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105956607_385676: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105956607_385676: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105956607_385676: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105956607_385676: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105956607_385676: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105956607_385676: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+org.apache.xmlrpc.common.XmlRpcInvocationException: Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105956607_385676: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105956607_385676: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105956607_385676: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105956607_385676: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105956607_385676: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105956607_385676: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:129)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105956607_385676: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105956607_385676: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105956607_385676: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105956607_385676: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105956607_385676: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105956607_385676: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	... 6 more
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105956607_385676: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105956607_385676: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105956607_385676: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105956607_385676: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105956607_385676: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105956607_385676: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+Caused by:
+net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105956607_385676: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105956607_385676: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105956607_385676: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105956607_385676: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105956607_385676: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105956607_385676: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424105956607_385676: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424105956607_385676: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424105956607_385676: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424105956607_385676: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424105956607_385676: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424105956607_385676: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+1    [XML-RPC-0] ERROR org.apache.xmlrpc.server.XmlRpcErrorLogger - Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Misplaced quote found at position 1 in row: ""
+org.apache.xmlrpc.common.XmlRpcInvocationException: Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Misplaced quote found at position 1 in row: ""
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:129)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: net.sf.jasperreports.engine.JRException: Misplaced quote found at position 1 in row: ""
+	at net.sf.jasperreports.engine.data.JRCsvDataSource.parseRow(JRCsvDataSource.java:361)
+	at net.sf.jasperreports.engine.data.JRCsvDataSource.next(JRCsvDataSource.java:200)
+	at com.nantic.jasperreports.CsvMultiLanguageDataSource.next(CsvMultiLanguageDataSource.java:107)
+	at net.sf.jasperreports.engine.fill.JRFillDataset.advanceDataSource(JRFillDataset.java:864)
+	at net.sf.jasperreports.engine.fill.JRFillDataset.next(JRFillDataset.java:782)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.next(JRBaseFiller.java:1482)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:126)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:946)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:864)
+	at net.sf.jasperreports.engine.fill.JRFiller.fillReport(JRFiller.java:84)
+	at net.sf.jasperreports.engine.JasperFillManager.fillReport(JasperFillManager.java:624)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:212)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	... 6 more
+Caused by:
+net.sf.jasperreports.engine.JRException: Misplaced quote found at position 1 in row: ""
+	at net.sf.jasperreports.engine.data.JRCsvDataSource.parseRow(JRCsvDataSource.java:361)
+	at net.sf.jasperreports.engine.data.JRCsvDataSource.next(JRCsvDataSource.java:200)
+	at com.nantic.jasperreports.CsvMultiLanguageDataSource.next(CsvMultiLanguageDataSource.java:107)
+	at net.sf.jasperreports.engine.fill.JRFillDataset.advanceDataSource(JRFillDataset.java:864)
+	at net.sf.jasperreports.engine.fill.JRFillDataset.next(JRFillDataset.java:782)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.next(JRBaseFiller.java:1482)
+	at net.sf.jasperreports.engine.fill.JRVerticalFiller.fillReport(JRVerticalFiller.java:126)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:946)
+	at net.sf.jasperreports.engine.fill.JRBaseFiller.fill(JRBaseFiller.java:864)
+	at net.sf.jasperreports.engine.fill.JRFiller.fillReport(JRFiller.java:84)
+	at net.sf.jasperreports.engine.JasperFillManager.fillReport(JasperFillManager.java:624)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:212)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+1    [XML-RPC-0] ERROR org.apache.xmlrpc.server.XmlRpcErrorLogger - Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107099205_117289: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424107099205_117289: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424107099205_117289: 916: unable to resolve class Scriptlet 
+ @ line 916, column 44.
+calculator_Invoice32Form_1424107099205_117289: 952: unable to resolve class Scriptlet 
+ @ line 952, column 40.
+calculator_Invoice32Form_1424107099205_117289: 1039: unable to resolve class Scriptlet 
+ @ line 1039, column 44.
+calculator_Invoice32Form_1424107099205_117289: 1075: unable to resolve class Scriptlet 
+ @ line 1075, column 40.
+6 errors
+
+org.apache.xmlrpc.common.XmlRpcInvocationException: Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107099205_117289: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424107099205_117289: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424107099205_117289: 916: unable to resolve class Scriptlet 
+ @ line 916, column 44.
+calculator_Invoice32Form_1424107099205_117289: 952: unable to resolve class Scriptlet 
+ @ line 952, column 40.
+calculator_Invoice32Form_1424107099205_117289: 1039: unable to resolve class Scriptlet 
+ @ line 1039, column 44.
+calculator_Invoice32Form_1424107099205_117289: 1075: unable to resolve class Scriptlet 
+ @ line 1075, column 40.
+6 errors
+
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:129)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107099205_117289: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424107099205_117289: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424107099205_117289: 916: unable to resolve class Scriptlet 
+ @ line 916, column 44.
+calculator_Invoice32Form_1424107099205_117289: 952: unable to resolve class Scriptlet 
+ @ line 952, column 40.
+calculator_Invoice32Form_1424107099205_117289: 1039: unable to resolve class Scriptlet 
+ @ line 1039, column 44.
+calculator_Invoice32Form_1424107099205_117289: 1075: unable to resolve class Scriptlet 
+ @ line 1075, column 40.
+6 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	... 6 more
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107099205_117289: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424107099205_117289: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424107099205_117289: 916: unable to resolve class Scriptlet 
+ @ line 916, column 44.
+calculator_Invoice32Form_1424107099205_117289: 952: unable to resolve class Scriptlet 
+ @ line 952, column 40.
+calculator_Invoice32Form_1424107099205_117289: 1039: unable to resolve class Scriptlet 
+ @ line 1039, column 44.
+calculator_Invoice32Form_1424107099205_117289: 1075: unable to resolve class Scriptlet 
+ @ line 1075, column 40.
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+Caused by:
+net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107099205_117289: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424107099205_117289: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424107099205_117289: 916: unable to resolve class Scriptlet 
+ @ line 916, column 44.
+calculator_Invoice32Form_1424107099205_117289: 952: unable to resolve class Scriptlet 
+ @ line 952, column 40.
+calculator_Invoice32Form_1424107099205_117289: 1039: unable to resolve class Scriptlet 
+ @ line 1039, column 44.
+calculator_Invoice32Form_1424107099205_117289: 1075: unable to resolve class Scriptlet 
+ @ line 1075, column 40.
+6 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107099205_117289: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424107099205_117289: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424107099205_117289: 916: unable to resolve class Scriptlet 
+ @ line 916, column 44.
+calculator_Invoice32Form_1424107099205_117289: 952: unable to resolve class Scriptlet 
+ @ line 952, column 40.
+calculator_Invoice32Form_1424107099205_117289: 1039: unable to resolve class Scriptlet 
+ @ line 1039, column 44.
+calculator_Invoice32Form_1424107099205_117289: 1075: unable to resolve class Scriptlet 
+ @ line 1075, column 40.
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+89262 [XML-RPC-0] ERROR org.apache.xmlrpc.server.XmlRpcErrorLogger - Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107189115_165828: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424107189115_165828: 935: unable to resolve class Scriptlet 
+ @ line 935, column 44.
+calculator_Invoice32Form_1424107189115_165828: 1077: unable to resolve class Scriptlet 
+ @ line 1077, column 44.
+3 errors
+
+org.apache.xmlrpc.common.XmlRpcInvocationException: Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107189115_165828: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424107189115_165828: 935: unable to resolve class Scriptlet 
+ @ line 935, column 44.
+calculator_Invoice32Form_1424107189115_165828: 1077: unable to resolve class Scriptlet 
+ @ line 1077, column 44.
+3 errors
+
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:129)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107189115_165828: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424107189115_165828: 935: unable to resolve class Scriptlet 
+ @ line 935, column 44.
+calculator_Invoice32Form_1424107189115_165828: 1077: unable to resolve class Scriptlet 
+ @ line 1077, column 44.
+3 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	... 6 more
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107189115_165828: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424107189115_165828: 935: unable to resolve class Scriptlet 
+ @ line 935, column 44.
+calculator_Invoice32Form_1424107189115_165828: 1077: unable to resolve class Scriptlet 
+ @ line 1077, column 44.
+3 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+Caused by:
+net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107189115_165828: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424107189115_165828: 935: unable to resolve class Scriptlet 
+ @ line 935, column 44.
+calculator_Invoice32Form_1424107189115_165828: 1077: unable to resolve class Scriptlet 
+ @ line 1077, column 44.
+3 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107189115_165828: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424107189115_165828: 935: unable to resolve class Scriptlet 
+ @ line 935, column 44.
+calculator_Invoice32Form_1424107189115_165828: 1077: unable to resolve class Scriptlet 
+ @ line 1077, column 44.
+3 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+276831 [XML-RPC-0] ERROR org.apache.xmlrpc.server.XmlRpcErrorLogger - Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107376727_443403: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424107376727_443403: 889: unable to resolve class Scriptlet 
+ @ line 889, column 44.
+calculator_Invoice32Form_1424107376727_443403: 985: unable to resolve class Scriptlet 
+ @ line 985, column 44.
+3 errors
+
+org.apache.xmlrpc.common.XmlRpcInvocationException: Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107376727_443403: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424107376727_443403: 889: unable to resolve class Scriptlet 
+ @ line 889, column 44.
+calculator_Invoice32Form_1424107376727_443403: 985: unable to resolve class Scriptlet 
+ @ line 985, column 44.
+3 errors
+
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:129)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107376727_443403: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424107376727_443403: 889: unable to resolve class Scriptlet 
+ @ line 889, column 44.
+calculator_Invoice32Form_1424107376727_443403: 985: unable to resolve class Scriptlet 
+ @ line 985, column 44.
+3 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	... 6 more
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107376727_443403: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424107376727_443403: 889: unable to resolve class Scriptlet 
+ @ line 889, column 44.
+calculator_Invoice32Form_1424107376727_443403: 985: unable to resolve class Scriptlet 
+ @ line 985, column 44.
+3 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+Caused by:
+net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107376727_443403: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424107376727_443403: 889: unable to resolve class Scriptlet 
+ @ line 889, column 44.
+calculator_Invoice32Form_1424107376727_443403: 985: unable to resolve class Scriptlet 
+ @ line 985, column 44.
+3 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107376727_443403: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424107376727_443403: 889: unable to resolve class Scriptlet 
+ @ line 889, column 44.
+calculator_Invoice32Form_1424107376727_443403: 985: unable to resolve class Scriptlet 
+ @ line 985, column 44.
+3 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+387451 [XML-RPC-0] ERROR org.apache.commons.digester.Digester - Parse Error at line 157 column 61: cvc-complex-type.2.4.a: Invalid content was found starting with element 'reportElement'. One of '{"http://jasperreports.sourceforge.net/jasperreports":textFieldExpression, "http://jasperreports.sourceforge.net/jasperreports":anchorNameExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkReferenceExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkAnchorExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkPageExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkTooltipExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkParameter}' is expected.
+org.xml.sax.SAXParseException: cvc-complex-type.2.4.a: Invalid content was found starting with element 'reportElement'. One of '{"http://jasperreports.sourceforge.net/jasperreports":textFieldExpression, "http://jasperreports.sourceforge.net/jasperreports":anchorNameExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkReferenceExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkAnchorExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkPageExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkTooltipExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkParameter}' is expected.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:195)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:131)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:384)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:318)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:423)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3188)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1812)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:731)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:377)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2756)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:140)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1205)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:522)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1647)
+	at net.sf.jasperreports.engine.xml.JRXmlLoader.loadXML(JRXmlLoader.java:241)
+	at net.sf.jasperreports.engine.xml.JRXmlLoader.loadXML(JRXmlLoader.java:228)
+	at net.sf.jasperreports.engine.xml.JRXmlLoader.load(JRXmlLoader.java:216)
+	at net.sf.jasperreports.engine.xml.JRXmlLoader.load(JRXmlLoader.java:170)
+	at net.sf.jasperreports.engine.xml.JRXmlLoader.load(JRXmlLoader.java:154)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:111)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+387453 [XML-RPC-0] ERROR org.apache.xmlrpc.server.XmlRpcErrorLogger - Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: org.xml.sax.SAXParseException: cvc-complex-type.2.4.a: Invalid content was found starting with element 'reportElement'. One of '{"http://jasperreports.sourceforge.net/jasperreports":textFieldExpression, "http://jasperreports.sourceforge.net/jasperreports":anchorNameExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkReferenceExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkAnchorExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkPageExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkTooltipExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkParameter}' is expected.
+org.apache.xmlrpc.common.XmlRpcInvocationException: Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: org.xml.sax.SAXParseException: cvc-complex-type.2.4.a: Invalid content was found starting with element 'reportElement'. One of '{"http://jasperreports.sourceforge.net/jasperreports":textFieldExpression, "http://jasperreports.sourceforge.net/jasperreports":anchorNameExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkReferenceExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkAnchorExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkPageExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkTooltipExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkParameter}' is expected.
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:129)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: net.sf.jasperreports.engine.JRException: org.xml.sax.SAXParseException: cvc-complex-type.2.4.a: Invalid content was found starting with element 'reportElement'. One of '{"http://jasperreports.sourceforge.net/jasperreports":textFieldExpression, "http://jasperreports.sourceforge.net/jasperreports":anchorNameExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkReferenceExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkAnchorExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkPageExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkTooltipExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkParameter}' is expected.
+	at net.sf.jasperreports.engine.xml.JRXmlLoader.loadXML(JRXmlLoader.java:245)
+	at net.sf.jasperreports.engine.xml.JRXmlLoader.loadXML(JRXmlLoader.java:228)
+	at net.sf.jasperreports.engine.xml.JRXmlLoader.load(JRXmlLoader.java:216)
+	at net.sf.jasperreports.engine.xml.JRXmlLoader.load(JRXmlLoader.java:170)
+	at net.sf.jasperreports.engine.xml.JRXmlLoader.load(JRXmlLoader.java:154)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:111)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	... 6 more
+Caused by: org.xml.sax.SAXParseException: cvc-complex-type.2.4.a: Invalid content was found starting with element 'reportElement'. One of '{"http://jasperreports.sourceforge.net/jasperreports":textFieldExpression, "http://jasperreports.sourceforge.net/jasperreports":anchorNameExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkReferenceExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkAnchorExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkPageExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkTooltipExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkParameter}' is expected.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:195)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:131)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:384)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:318)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:423)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3188)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1812)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:731)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:377)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2756)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:140)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1205)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:522)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1647)
+	at net.sf.jasperreports.engine.xml.JRXmlLoader.loadXML(JRXmlLoader.java:241)
+	... 19 more
+Caused by:
+net.sf.jasperreports.engine.JRException: org.xml.sax.SAXParseException: cvc-complex-type.2.4.a: Invalid content was found starting with element 'reportElement'. One of '{"http://jasperreports.sourceforge.net/jasperreports":textFieldExpression, "http://jasperreports.sourceforge.net/jasperreports":anchorNameExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkReferenceExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkAnchorExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkPageExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkTooltipExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkParameter}' is expected.
+	at net.sf.jasperreports.engine.xml.JRXmlLoader.loadXML(JRXmlLoader.java:245)
+	at net.sf.jasperreports.engine.xml.JRXmlLoader.loadXML(JRXmlLoader.java:228)
+	at net.sf.jasperreports.engine.xml.JRXmlLoader.load(JRXmlLoader.java:216)
+	at net.sf.jasperreports.engine.xml.JRXmlLoader.load(JRXmlLoader.java:170)
+	at net.sf.jasperreports.engine.xml.JRXmlLoader.load(JRXmlLoader.java:154)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:111)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: org.xml.sax.SAXParseException: cvc-complex-type.2.4.a: Invalid content was found starting with element 'reportElement'. One of '{"http://jasperreports.sourceforge.net/jasperreports":textFieldExpression, "http://jasperreports.sourceforge.net/jasperreports":anchorNameExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkReferenceExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkAnchorExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkPageExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkTooltipExpression, "http://jasperreports.sourceforge.net/jasperreports":hyperlinkParameter}' is expected.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:195)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:131)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:384)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:318)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:423)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3188)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1812)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:731)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:377)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2756)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:140)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1205)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:522)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1647)
+	at net.sf.jasperreports.engine.xml.JRXmlLoader.loadXML(JRXmlLoader.java:241)
+	... 19 more
+417312 [XML-RPC-0] ERROR org.apache.xmlrpc.server.XmlRpcErrorLogger - Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107517192_834003: 825: unable to resolve class Scriptlet 
+ @ line 825, column 40.
+calculator_Invoice32Form_1424107517192_834003: 970: unable to resolve class Scriptlet 
+ @ line 970, column 40.
+calculator_Invoice32Form_1424107517192_834003: 1115: unable to resolve class Scriptlet 
+ @ line 1115, column 40.
+3 errors
+
+org.apache.xmlrpc.common.XmlRpcInvocationException: Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107517192_834003: 825: unable to resolve class Scriptlet 
+ @ line 825, column 40.
+calculator_Invoice32Form_1424107517192_834003: 970: unable to resolve class Scriptlet 
+ @ line 970, column 40.
+calculator_Invoice32Form_1424107517192_834003: 1115: unable to resolve class Scriptlet 
+ @ line 1115, column 40.
+3 errors
+
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:129)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107517192_834003: 825: unable to resolve class Scriptlet 
+ @ line 825, column 40.
+calculator_Invoice32Form_1424107517192_834003: 970: unable to resolve class Scriptlet 
+ @ line 970, column 40.
+calculator_Invoice32Form_1424107517192_834003: 1115: unable to resolve class Scriptlet 
+ @ line 1115, column 40.
+3 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	... 6 more
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107517192_834003: 825: unable to resolve class Scriptlet 
+ @ line 825, column 40.
+calculator_Invoice32Form_1424107517192_834003: 970: unable to resolve class Scriptlet 
+ @ line 970, column 40.
+calculator_Invoice32Form_1424107517192_834003: 1115: unable to resolve class Scriptlet 
+ @ line 1115, column 40.
+3 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+Caused by:
+net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107517192_834003: 825: unable to resolve class Scriptlet 
+ @ line 825, column 40.
+calculator_Invoice32Form_1424107517192_834003: 970: unable to resolve class Scriptlet 
+ @ line 970, column 40.
+calculator_Invoice32Form_1424107517192_834003: 1115: unable to resolve class Scriptlet 
+ @ line 1115, column 40.
+3 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424107517192_834003: 825: unable to resolve class Scriptlet 
+ @ line 825, column 40.
+calculator_Invoice32Form_1424107517192_834003: 970: unable to resolve class Scriptlet 
+ @ line 970, column 40.
+calculator_Invoice32Form_1424107517192_834003: 1115: unable to resolve class Scriptlet 
+ @ line 1115, column 40.
+3 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+445723 [XML-RPC-0] ERROR org.apache.xmlrpc.server.XmlRpcErrorLogger - Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Could not load the following font : 
+pdfFontName   : Garuda.ttf
+pdfEncoding   : Identity-H
+isPdfEmbedded : false
+org.apache.xmlrpc.common.XmlRpcInvocationException: Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Could not load the following font : 
+pdfFontName   : Garuda.ttf
+pdfEncoding   : Identity-H
+isPdfEmbedded : false
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:129)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: net.sf.jasperreports.engine.JRRuntimeException: Could not load the following font : 
+pdfFontName   : Garuda.ttf
+pdfEncoding   : Identity-H
+isPdfEmbedded : false
+	at net.sf.jasperreports.engine.export.JRPdfExporter.getFont(JRPdfExporter.java:1961)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.getChunk(JRPdfExporter.java:1725)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.getPhrase(JRPdfExporter.java:1694)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportText(JRPdfExporter.java:2177)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportElements(JRPdfExporter.java:778)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportPage(JRPdfExporter.java:738)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportReportToStream(JRPdfExporter.java:616)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportReport(JRPdfExporter.java:385)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:269)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	... 6 more
+Caused by:
+net.sf.jasperreports.engine.JRRuntimeException: Could not load the following font : 
+pdfFontName   : Garuda.ttf
+pdfEncoding   : Identity-H
+isPdfEmbedded : false
+	at net.sf.jasperreports.engine.export.JRPdfExporter.getFont(JRPdfExporter.java:1961)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.getChunk(JRPdfExporter.java:1725)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.getPhrase(JRPdfExporter.java:1694)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportText(JRPdfExporter.java:2177)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportElements(JRPdfExporter.java:778)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportPage(JRPdfExporter.java:738)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportReportToStream(JRPdfExporter.java:616)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportReport(JRPdfExporter.java:385)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:269)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+507045 [XML-RPC-0] ERROR org.apache.xmlrpc.server.XmlRpcErrorLogger - Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Could not load the following font : 
+pdfFontName   : Garuda.ttf
+pdfEncoding   : Identity-H
+isPdfEmbedded : false
+org.apache.xmlrpc.common.XmlRpcInvocationException: Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Could not load the following font : 
+pdfFontName   : Garuda.ttf
+pdfEncoding   : Identity-H
+isPdfEmbedded : false
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:129)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: net.sf.jasperreports.engine.JRRuntimeException: Could not load the following font : 
+pdfFontName   : Garuda.ttf
+pdfEncoding   : Identity-H
+isPdfEmbedded : false
+	at net.sf.jasperreports.engine.export.JRPdfExporter.getFont(JRPdfExporter.java:1961)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.getChunk(JRPdfExporter.java:1725)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.getPhrase(JRPdfExporter.java:1694)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportText(JRPdfExporter.java:2177)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportElements(JRPdfExporter.java:778)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportPage(JRPdfExporter.java:738)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportReportToStream(JRPdfExporter.java:616)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportReport(JRPdfExporter.java:385)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:269)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	... 6 more
+Caused by:
+net.sf.jasperreports.engine.JRRuntimeException: Could not load the following font : 
+pdfFontName   : Garuda.ttf
+pdfEncoding   : Identity-H
+isPdfEmbedded : false
+	at net.sf.jasperreports.engine.export.JRPdfExporter.getFont(JRPdfExporter.java:1961)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.getChunk(JRPdfExporter.java:1725)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.getPhrase(JRPdfExporter.java:1694)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportText(JRPdfExporter.java:2177)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportElements(JRPdfExporter.java:778)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportPage(JRPdfExporter.java:738)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportReportToStream(JRPdfExporter.java:616)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportReport(JRPdfExporter.java:385)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:269)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+817564 [XML-RPC-0] ERROR org.apache.xmlrpc.server.XmlRpcErrorLogger - Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Could not load the following font : 
+pdfFontName   : Garuda.ttf
+pdfEncoding   : Identity-H
+isPdfEmbedded : false
+org.apache.xmlrpc.common.XmlRpcInvocationException: Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Could not load the following font : 
+pdfFontName   : Garuda.ttf
+pdfEncoding   : Identity-H
+isPdfEmbedded : false
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:129)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: net.sf.jasperreports.engine.JRRuntimeException: Could not load the following font : 
+pdfFontName   : Garuda.ttf
+pdfEncoding   : Identity-H
+isPdfEmbedded : false
+	at net.sf.jasperreports.engine.export.JRPdfExporter.getFont(JRPdfExporter.java:1961)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.getChunk(JRPdfExporter.java:1725)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.getPhrase(JRPdfExporter.java:1694)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportText(JRPdfExporter.java:2177)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportElements(JRPdfExporter.java:778)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportPage(JRPdfExporter.java:738)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportReportToStream(JRPdfExporter.java:616)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportReport(JRPdfExporter.java:385)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:269)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	... 6 more
+Caused by:
+net.sf.jasperreports.engine.JRRuntimeException: Could not load the following font : 
+pdfFontName   : Garuda.ttf
+pdfEncoding   : Identity-H
+isPdfEmbedded : false
+	at net.sf.jasperreports.engine.export.JRPdfExporter.getFont(JRPdfExporter.java:1961)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.getChunk(JRPdfExporter.java:1725)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.getPhrase(JRPdfExporter.java:1694)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportText(JRPdfExporter.java:2177)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportElements(JRPdfExporter.java:778)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportPage(JRPdfExporter.java:738)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportReportToStream(JRPdfExporter.java:616)
+	at net.sf.jasperreports.engine.export.JRPdfExporter.exportReport(JRPdfExporter.java:385)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:269)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+1    [XML-RPC-0] ERROR org.apache.xmlrpc.server.XmlRpcErrorLogger - Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424108664909_142545: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424108664909_142545: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424108664909_142545: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424108664909_142545: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424108664909_142545: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424108664909_142545: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+org.apache.xmlrpc.common.XmlRpcInvocationException: Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424108664909_142545: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424108664909_142545: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424108664909_142545: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424108664909_142545: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424108664909_142545: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424108664909_142545: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:129)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424108664909_142545: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424108664909_142545: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424108664909_142545: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424108664909_142545: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424108664909_142545: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424108664909_142545: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	... 6 more
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424108664909_142545: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424108664909_142545: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424108664909_142545: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424108664909_142545: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424108664909_142545: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424108664909_142545: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+Caused by:
+net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424108664909_142545: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424108664909_142545: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424108664909_142545: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424108664909_142545: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424108664909_142545: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424108664909_142545: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424108664909_142545: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424108664909_142545: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424108664909_142545: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424108664909_142545: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424108664909_142545: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424108664909_142545: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+1    [XML-RPC-0] ERROR org.apache.xmlrpc.server.XmlRpcErrorLogger - Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424109047694_452010: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424109047694_452010: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424109047694_452010: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424109047694_452010: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424109047694_452010: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424109047694_452010: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+org.apache.xmlrpc.common.XmlRpcInvocationException: Failed to invoke method execute in class com.nantic.jasperreports.JasperServer: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424109047694_452010: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424109047694_452010: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424109047694_452010: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424109047694_452010: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424109047694_452010: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424109047694_452010: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:129)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424109047694_452010: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424109047694_452010: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424109047694_452010: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424109047694_452010: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424109047694_452010: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424109047694_452010: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	... 6 more
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424109047694_452010: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424109047694_452010: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424109047694_452010: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424109047694_452010: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424109047694_452010: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424109047694_452010: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more
+Caused by:
+net.sf.jasperreports.engine.JRException: Errors were encountered when compiling report expressions class file:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424109047694_452010: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424109047694_452010: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424109047694_452010: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424109047694_452010: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424109047694_452010: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424109047694_452010: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:101)
+	at net.sf.jasperreports.engine.design.JRAbstractCompiler.compileReport(JRAbstractCompiler.java:188)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReport(JasperCompileManager.java:215)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:131)
+	at net.sf.jasperreports.engine.JasperCompileManager.compileReportToFile(JasperCompileManager.java:113)
+	at com.nantic.jasperreports.JasperServer.compile(JasperServer.java:98)
+	at com.nantic.jasperreports.JasperServer.privateExecute(JasperServer.java:137)
+	at com.nantic.jasperreports.JasperServer.execute(JasperServer.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.invoke(ReflectiveXmlRpcHandler.java:115)
+	at org.apache.xmlrpc.server.ReflectiveXmlRpcHandler.execute(ReflectiveXmlRpcHandler.java:106)
+	at org.apache.xmlrpc.server.XmlRpcServerWorker.execute(XmlRpcServerWorker.java:46)
+	at org.apache.xmlrpc.server.XmlRpcServer.execute(XmlRpcServer.java:86)
+	at org.apache.xmlrpc.server.XmlRpcStreamServer.execute(XmlRpcStreamServer.java:200)
+	at org.apache.xmlrpc.webserver.Connection.run(Connection.java:208)
+	at org.apache.xmlrpc.util.ThreadPool$Poolable$1.run(ThreadPool.java:68)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+calculator_Invoice32Form_1424109047694_452010: 793: unable to resolve class Scriptlet 
+ @ line 793, column 44.
+calculator_Invoice32Form_1424109047694_452010: 829: unable to resolve class Scriptlet 
+ @ line 829, column 40.
+calculator_Invoice32Form_1424109047694_452010: 942: unable to resolve class Scriptlet 
+ @ line 942, column 44.
+calculator_Invoice32Form_1424109047694_452010: 978: unable to resolve class Scriptlet 
+ @ line 978, column 40.
+calculator_Invoice32Form_1424109047694_452010: 1091: unable to resolve class Scriptlet 
+ @ line 1091, column 44.
+calculator_Invoice32Form_1424109047694_452010: 1127: unable to resolve class Scriptlet 
+ @ line 1127, column 40.
+6 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:296)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:829)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:511)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:487)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:464)
+	at net.sf.jasperreports.compilers.JRGroovyCompiler.compileUnits(JRGroovyCompiler.java:97)
+	... 18 more

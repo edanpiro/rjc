@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="report_trialbalance_extended" inherit_id="account.report_trialbalance">
+			<xpath expr="//div/div[@class='row mt32']/div[4]" position="after">
+				<div class="col-xs-3">
+	                 <strong>Account Range:</strong>
+	                 <p t-if="data['form']['filter'] == 'filter_period'">
+	                 	<span t-if="data['form']['from_account']"/>
+	                 	<span t-if="not data['form']['from_account']">0</span> 
+	                 	- 
+	                 	<span t-if="data['form']['to_account']" /><span t-if="not data['form']['to_account']">0</span>
+                   	 </p>
+	             </div>
+			</xpath>
+		</template>
+	</data>
+</openerp>

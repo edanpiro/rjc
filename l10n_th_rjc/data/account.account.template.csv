@@ -1,0 +1,303 @@
+id,name,code,parent_id/id,type,user_type/id,reconcile
+thai_rjc_0,Chart of Account – RJC,0,,View,account.data_account_type_root_view,FALSE
+thai_rjc_1,Statement of Financial Position,1,thai_rjc_0,View,account.data_account_type_view,FALSE
+thai_rjc_10000,สินทรัพย์,10000,thai_rjc_1,View,account.data_account_type_view,FALSE
+thai_rjc_11000,สินทรัพย์หมุนเวียน,11000,thai_rjc_10000,View,account.data_account_type_view,FALSE
+thai_rjc_11100,เงินสดและรายการเทียบเท่าเงินสด,11100,thai_rjc_11000,View,account.data_account_type_view,FALSE
+thai_rjc_11101,เงินสดย่อย,11101,thai_rjc_11100,Liquidity,account.data_account_type_cash,FALSE
+thai_rjc_11109,บัญชีเงินสดย่อยรอการโอน,11109,thai_rjc_11100,Liquidity,account.data_account_type_cash,FALSE
+thai_rjc_11110,เงินฝากออมทรัพย์ - ธนาคารกรุงเทพ,11110,thai_rjc_11100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_11111,เงินฝากออมทรัพย์ - ธนาคารนครหลวงไทย,11111,thai_rjc_11100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_11112,เงินฝากออมทรัพย์ - ธนาคารธนชาติ,11112,thai_rjc_11100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_11121,เงินฝากกระแสรายวัน - ธนาคารไทยพาณิชย์,11121,thai_rjc_11100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_11122,เงินฝากกระแสรายวัน - ธนาคารกสิกรไทย,11122,thai_rjc_11100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_11123,เงินฝากกระแสรายวัน - ธนาคารกรุงศรีอยุธยา,11123,thai_rjc_11100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_11124,เงินฝากกระแสรายวัน - ธนาคารกรุงเทพ,11124,thai_rjc_11100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_11125,เงินฝากกระแสรายวัน - ธนาคารกรุงไทย,11125,thai_rjc_11100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_11126,เงินฝากกระแสรายวัน - ธนาคารนครหลวงไทย,11126,thai_rjc_11100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_11127,เงินฝากกระแสรายวัน - ธนาคารธนชาติ,11127,thai_rjc_11100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_11131,เงินฝากประจำ - ธนาคารไทยพาณิชย์,11131,thai_rjc_11100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_11132,เงินฝากประจำ - ธนาคารนครหลวงไทย,11132,thai_rjc_11100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_11150,เช็ครับล่วงหน้า,11150,thai_rjc_11100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_11199,บัญชีธนาคารรอการโอน,11199,thai_rjc_11100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_11200,เงินลงทุนชั่วคราว,11200,thai_rjc_11000,View,account.data_account_type_view,FALSE
+thai_rjc_11210,ตั๋วสัญญาใช้เงิน,11210,thai_rjc_11200,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11220,เงินลงทุนระยะสั้น,11220,thai_rjc_11200,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11290,เงินลงทุนอื่น,11290,thai_rjc_11200,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11300,ลูกหนี้การค้าและลูกหนี้อื่น,11300,thai_rjc_11000,View,account.data_account_type_view,FALSE
+thai_rjc_11310,ลูกหนี้การค้าในประเทศ,11310,thai_rjc_11300,Receivable,account.data_account_type_receivable,TRUE
+thai_rjc_11311,ลูกหนี้การค้าต่างประเทศ,11311,thai_rjc_11300,Receivable,account.data_account_type_receivable,TRUE
+thai_rjc_11320,ลูกหนี้สินค้า - ฝากขาย,11320,thai_rjc_11300,Receivable,account.data_account_type_receivable,TRUE
+thai_rjc_11330,ลูกหนี้สินค้า - บริการ,11330,thai_rjc_11300,Receivable,account.data_account_type_receivable,TRUE
+thai_rjc_11340,ลูกหนี้บริษัทที่เกี่ยวข้องกัน,11340,thai_rjc_11300,Receivable,account.data_account_type_receivable,TRUE
+thai_rjc_11350,ลูกหนี้อื่น,11350,thai_rjc_11300,Receivable,account.data_account_type_receivable,TRUE
+thai_rjc_11390,ค่าเผื่อหนี้สงสัยจะสูญ,11390,thai_rjc_11300,Regular,account.data_account_type_receivable,FALSE
+thai_rjc_11399,ลูกหนี้ยังไม่ออกใบแจ้งหนี้,11399,thai_rjc_11300,Regular,account.data_account_type_receivable,TRUE
+thai_rjc_11400,เงินให้กู้ยืมระยะสั้น,11400,thai_rjc_11000,View,account.data_account_type_view,FALSE
+thai_rjc_11410,เงินให้กู้ยืมระยะสั้นแก่พนักงาน,11410,thai_rjc_11400,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11420,เงินให้กู้ยืมระยะสั้นแก่กรรมการและผู้ถือหุ้น,11420,thai_rjc_11400,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11430,เงินให้กู้ยืมระยะสั้นแก่บริษัทที่เกี่ยวข้องกัน,11430,thai_rjc_11400,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11490,เงินให้กู้ยืมระยะสั้นอื่น,11490,thai_rjc_11400,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11500,สินค้าคงเหลือ,11500,thai_rjc_11000,View,account.data_account_type_view,FALSE
+thai_rjc_11510,สินค้าสำเร็จรูป,11510,thai_rjc_11500,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11520,งานระหว่างทำ,11520,thai_rjc_11500,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11530,วัตถุดิบ,11530,thai_rjc_11500,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11540,วัสดุประกอบ/อะไหล่,11540,thai_rjc_11500,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11600,สินทรัพย์หมุนเวียนอื่น,11600,thai_rjc_11000,View,account.data_account_type_view,FALSE
+thai_rjc_11601,ภาษีซื้อ,11601,thai_rjc_11600,Regular,account.data_account_type_input_tax,FALSE
+thai_rjc_11602,ภาษีซื้อยังไม่ถึงกำหนดชำระ,11602,thai_rjc_11600,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11603,ลูกหนี้กรมสรรพากร,11603,thai_rjc_11600,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11604,ภาษีเงินได้ถูกหัก ณ ที่จ่าย,11604,thai_rjc_11600,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11605,ภาษีนิติบุคคลจ่ายล่วงหน้า,11605,thai_rjc_11600,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11610,ค่าใช้จ่ายจ่ายล่วงหน้า,11610,thai_rjc_11600,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11620,เงินทดรองจ่าย,11620,thai_rjc_11600,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11630,เงินมัดจำสินค้า,11630,thai_rjc_11600,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11640,รายได้ค้างรับ,11640,thai_rjc_11600,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11650,ดอกเบี้ยค้างรับ,11650,thai_rjc_11600,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_11660,สินทรัพย์หมุนเวียนอื่น,11660,thai_rjc_11600,Regular,account.data_account_type_current_assets,FALSE
+thai_rjc_12000,สินทรัพย์ไม่หมุนเวียน,12000,thai_rjc_10000,View,account.data_account_type_view,FALSE
+thai_rjc_12100,เงินลงทุนระยะยาว,12100,thai_rjc_12000,View,account.data_account_type_view,FALSE
+thai_rjc_12110,เงินลงทุนระยะยาว,12110,thai_rjc_12100,Regular,account.data_account_type_non_current_assets,FALSE
+thai_rjc_12200,เงินให้กู้ยืมระยะยาว,12200,thai_rjc_12000,View,account.data_account_type_view,FALSE
+thai_rjc_12210,เงินให้กู้ยืมระยะยาวแก่พนักงาน,12210,thai_rjc_12200,Regular,account.data_account_type_non_current_assets,FALSE
+thai_rjc_12220,เงินให้กู้ยืมระยะยาวแก่กรรมการและผู้ถือหุ้น,12220,thai_rjc_12200,Regular,account.data_account_type_non_current_assets,FALSE
+thai_rjc_12230,เงินให้กู้ยืมระยะยาวบริษัทที่เกี่ยวข้องกัน,12230,thai_rjc_12200,Regular,account.data_account_type_non_current_assets,FALSE
+thai_rjc_12290,เงินให้กู้ยืมระยะยาวอื่น,12290,thai_rjc_12200,Regular,account.data_account_type_non_current_assets,FALSE
+thai_rjc_12300,ที่ดิน อาคารและอุปกรณ์ - สุทธิ,12300,thai_rjc_12000,View,account.data_account_type_view,FALSE
+thai_rjc_12305,ที่ดิน,12305,thai_rjc_12300,Regular,account.data_account_type_fixed_assets,FALSE
+thai_rjc_12310,อาคารและสิ่งปลูกสร้าง,12310,thai_rjc_12300,Regular,account.data_account_type_fixed_assets,FALSE
+thai_rjc_12311,งานระหว่างก่อสร้าง,12311,thai_rjc_12300,Regular,account.data_account_type_fixed_assets,FALSE
+thai_rjc_12320,สิทธิการเช่า,12320,thai_rjc_12300,Regular,account.data_account_type_fixed_assets,FALSE
+thai_rjc_12330,เครื่องจักร,12330,thai_rjc_12300,Regular,account.data_account_type_fixed_assets,FALSE
+thai_rjc_12340,เครื่องมือและอุปกรณ์โรงงาน,12340,thai_rjc_12300,Regular,account.data_account_type_fixed_assets,FALSE
+thai_rjc_12350,เครื่องตกแต่งและเครื่องใช้สำนักงาน,12350,thai_rjc_12300,Regular,account.data_account_type_fixed_assets,FALSE
+thai_rjc_12360,คอมพิวเตอร์,12360,thai_rjc_12300,Regular,account.data_account_type_fixed_assets,FALSE
+thai_rjc_12370,ซอฟท์แวร์,12370,thai_rjc_12300,Regular,account.data_account_type_fixed_assets,FALSE
+thai_rjc_12380,ยานพาหนะ,12380,thai_rjc_12300,Regular,account.data_account_type_fixed_assets,FALSE
+thai_rjc_12319,ค่าเสื่อมราคาสะสมอาคารและสิ่งปลูกสร้าง,12319,thai_rjc_12300,Regular,account.data_account_type_fixed_assets,FALSE
+thai_rjc_12329,สิทธิการเช่าตัดจำหน่ายสะสม,12329,thai_rjc_12300,Regular,account.data_account_type_fixed_assets,FALSE
+thai_rjc_12339,ค่าเสื่อมราคาสะสมเครื่องจักร,12339,thai_rjc_12300,Regular,account.data_account_type_fixed_assets,FALSE
+thai_rjc_12349,ค่าเสื่อมราคาสะสมเครื่องมือและอุปกรณ์โรงงาน,12349,thai_rjc_12300,Regular,account.data_account_type_fixed_assets,FALSE
+thai_rjc_12359,ค่าเสื่อมราคาสะสมเครื่องตกแต่งและเครื่องใช้สำนักงาน,12359,thai_rjc_12300,Regular,account.data_account_type_fixed_assets,FALSE
+thai_rjc_12369,ค่าเสื่อมราคาสะสมคอมพิวเตอร์,12369,thai_rjc_12300,Regular,account.data_account_type_fixed_assets,FALSE
+thai_rjc_12379,ค่าเสื่อมราคาสะสมซอฟท์แวร์,12379,thai_rjc_12300,Regular,account.data_account_type_fixed_assets,FALSE
+thai_rjc_12389,ค่าเสื่อมราคาสะสมยานพาหนะ,12389,thai_rjc_12300,Regular,account.data_account_type_fixed_assets,FALSE
+thai_rjc_12500,สินทรัพย์ไม่มีตัวตน,12500,thai_rjc_12000,View,account.data_account_type_view,FALSE
+thai_rjc_12510,ค่าลิขสิทธิ์,12510,thai_rjc_12500,Regular,account.data_account_type_non_current_assets,FALSE
+thai_rjc_12520,สิทธิบัตร,12520,thai_rjc_12500,Regular,account.data_account_type_non_current_assets,FALSE
+thai_rjc_12590,สินทรัพย์ไม่มีตัวตนอื่น,12590,thai_rjc_12500,Regular,account.data_account_type_non_current_assets,FALSE
+thai_rjc_12600,สินทรัพย์อื่น,12600,thai_rjc_12000,View,account.data_account_type_view,FALSE
+thai_rjc_12610,เงินมัดจำ,12610,thai_rjc_12600,Regular,account.data_account_type_non_current_assets,FALSE
+thai_rjc_12620,เงินค้ำประกันระยะยาว,12620,thai_rjc_12600,Regular,account.data_account_type_non_current_assets,FALSE
+thai_rjc_12690,สินทรัพย์อื่น,12690,thai_rjc_12600,Regular,account.data_account_type_non_current_assets,FALSE
+thai_rjc_20000,หนี้สิน,20000,thai_rjc_1,View,account.data_account_type_view,FALSE
+thai_rjc_21000,หนี้สินหมุนเวียน,21000,thai_rjc_20000,View,account.data_account_type_view,FALSE
+thai_rjc_21100,เงินเบิกเกินบัญชีและเงินกู้ยืมระยะสั้นจากสถาบันการเงิน,21100,thai_rjc_21000,View,account.data_account_type_view,FALSE
+thai_rjc_21101,เงินเบิกเกินบัญชี - ธนาคารไทยพาณิชย์,21101,thai_rjc_21100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_21102,เงินเบิกเกินบัญชี - ธนาคารกสิกรไทย,21102,thai_rjc_21100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_21103,เงินเบิกเกินบัญชี - ธนาคารกรุงศรีอยุธยา,21103,thai_rjc_21100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_21104,เงินเบิกเกินบัญชี -  ธนาคารกรุงเทพ,21104,thai_rjc_21100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_21105,เงินเบิกเกินบัญชี -  ธนาคารกรุงไทย,21105,thai_rjc_21100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_21106,เงินเบิกเกินบัญชี - ธนาคารนครหลวงไทย,21106,thai_rjc_21100,Liquidity,account.data_account_type_bank,FALSE
+thai_rjc_21110,ตั๋วสัญญาใช้เงิน,21110,thai_rjc_21100,Regular,account.data_account_type_current_liabilities,FALSE
+thai_rjc_21120,เงินกู้ธนาคารนครหลวงไทย,21120,thai_rjc_21100,Regular,account.data_account_type_current_liabilities,FALSE
+thai_rjc_21130,เงินกู้ธนาคารไทยพาณิชย์,21130,thai_rjc_21100,Regular,account.data_account_type_current_liabilities,FALSE
+thai_rjc_21200,เจ้าหนี้การค้าและเจ้าหนี้อื่น,21200,thai_rjc_21000,View,account.data_account_type_view,FALSE
+thai_rjc_21210,เจ้าหนี้การค้าในประเทศ,21210,thai_rjc_21200,Payable,account.data_account_type_payable,TRUE
+thai_rjc_21211,เจ้าหนี้การค้าต่างประเทศ,21211,thai_rjc_21200,Payable,account.data_account_type_payable,TRUE
+thai_rjc_21220,เจ้าหนี้การค้า - บริการ,21220,thai_rjc_21200,Payable,account.data_account_type_payable,TRUE
+thai_rjc_21230,ตั๋วเงินจ่าย,21230,thai_rjc_21200,Regular,account.data_account_type_current_liabilities,FALSE
+thai_rjc_21240,เจ้าหนี้บริษัทที่เกี่ยวข้องกัน,21240,thai_rjc_21200,Payable,account.data_account_type_payable,TRUE
+thai_rjc_21250,เจ้าหนี้อื่น,21250,thai_rjc_21200,Payable,account.data_account_type_payable,TRUE
+thai_rjc_21299,เจ้าหนี้ยังไม่ออกใบแจ้งหนี้,21299,thai_rjc_21200,Regular,account.data_account_type_payable,TRUE
+thai_rjc_21300,ค่าใช้จ่ายค้างจ่าย,21300,thai_rjc_21000,View,account.data_account_type_view,FALSE
+thai_rjc_21310,ภาษีเงินได้หัก ณ ที่จ่ายค้างจ่าย,21310,thai_rjc_21300,Regular,account.data_account_type_current_liabilities,FALSE
+thai_rjc_21311,ภาษีเงินได้นิติบุคคลค้างจ่าย,21311,thai_rjc_21300,Regular,account.data_account_type_current_liabilities,FALSE
+thai_rjc_21320,เงินสมทบประกันสังคมค้างจ่าบ,21320,thai_rjc_21300,Regular,account.data_account_type_current_liabilities,FALSE
+thai_rjc_21330,ค่าใช้จ่ายค้างจ่าย,21330,thai_rjc_21300,Regular,account.data_account_type_current_liabilities,FALSE
+thai_rjc_21340,ดอกเบี้ยค้างจ่าย,21340,thai_rjc_21300,Regular,account.data_account_type_current_liabilities,FALSE
+thai_rjc_21400,หนี้สินหมุนเวียนอื่น,21400,thai_rjc_21000,View,account.data_account_type_view,FALSE
+thai_rjc_21410,ภาษีขาย,21410,thai_rjc_21400,Regular,account.data_account_type_output_tax,FALSE
+thai_rjc_21411,เจ้าหนี้กรมสรรพากร,21411,thai_rjc_21400,Regular,account.data_account_type_current_liabilities,FALSE
+thai_rjc_21420,รายได้รับล่วงหน้า,21420,thai_rjc_21400,Regular,account.data_account_type_current_liabilities,FALSE
+thai_rjc_21430,เงินมัดจำค่าสินค้า,21430,thai_rjc_21400,Regular,account.data_account_type_current_liabilities,FALSE
+thai_rjc_21440,เงินสะสมพนักงานและแรงงานต่างด้าว,21440,thai_rjc_21400,Regular,account.data_account_type_current_liabilities,FALSE
+thai_rjc_21480,Current Portion of Long Term Debt,21480,thai_rjc_21400,Regular,account.data_account_type_current_liabilities,FALSE
+thai_rjc_21490,หนี้สินหมุนเวียนอื่น,21490,thai_rjc_21400,Regular,account.data_account_type_current_liabilities,FALSE
+thai_rjc_22000,หนี้สินไม่หมุนเวียน,22000,thai_rjc_20000,View,account.data_account_type_view,FALSE
+thai_rjc_22100,เงินกู้ยืมระยะยาว,22100,thai_rjc_22000,View,account.data_account_type_view,FALSE
+thai_rjc_22110,เงินกู้ยืมระยะยาวจากกรรมการและผู้ถือหุ้น,22110,thai_rjc_22100,Regular,account.data_account_type_non_current_liabilities,FALSE
+thai_rjc_22120,เงินกู้ยืมระยะยาวจากบริษัทที่เกี่ยวข้องกัน,22120,thai_rjc_22100,Regular,account.data_account_type_non_current_liabilities,FALSE
+thai_rjc_22190,เงินให้กู้ยืมระยะยาวอื่น,22190,thai_rjc_22100,Regular,account.data_account_type_non_current_liabilities,FALSE
+thai_rjc_22200,หนี้สินไม่หมุนเวียนอื่น,22200,thai_rjc_22000,View,account.data_account_type_view,FALSE
+thai_rjc_22290,หนี้สินไม่หมุนเวียนอื่น,22290,thai_rjc_22200,Regular,account.data_account_type_non_current_liabilities,FALSE
+thai_rjc_30000,ส่วนของผู้ถือหุ้น,30000,thai_rjc_1,View,account.data_account_type_view,FALSE
+thai_rjc_31000,ทุน,31000,thai_rjc_30000,View,account.data_account_type_view,FALSE
+thai_rjc_31100,ทุน - หุ้นสามัญ,31100,thai_rjc_31000,Regular,account.data_account_type_equity,FALSE
+thai_rjc_31110,ส่วนเกินทุนหุ้นสามัญ,31110,thai_rjc_31000,Regular,account.data_account_type_equity,FALSE
+thai_rjc_31200,ทุน - หุ้นบุริมสิทธิ,31200,thai_rjc_31000,Regular,account.data_account_type_equity,FALSE
+thai_rjc_31210,ส่วนเกินทุนหุ้นบุริมสิทธิ,31210,thai_rjc_31000,Regular,account.data_account_type_equity,FALSE
+thai_rjc_32000,ส่วนได้เสียผู้ถือหุ้น,32000,thai_rjc_30000,View,account.data_account_type_view,FALSE
+thai_rjc_32100,เงินปันผล,32100,thai_rjc_32000,Regular,account.data_account_type_equity,FALSE
+thai_rjc_32200,Drawings,32200,thai_rjc_32000,Regular,account.data_account_type_equity,FALSE
+thai_rjc_32900,กำไร(ขาดทุน)สะสม,32900,thai_rjc_32000,Regular,account.data_account_type_equity,FALSE
+thai_rjc_2,Statement of Income,2,thai_rjc_0,View,account.data_account_type_view,FALSE
+thai_rjc_40000,รายได้,40000,thai_rjc_2,View,account.data_account_type_view,FALSE
+thai_rjc_41000,รายได้จากการขายและบริการ,41000,thai_rjc_40000,View,account.data_account_type_view,FALSE
+thai_rjc_41100,รายได้จากการขายสินค้า,41100,thai_rjc_41000,Regular,account.data_account_type_income,FALSE
+thai_rjc_41200,รายได้จากการขายสินค้าผลิต,41200,thai_rjc_41000,Regular,account.data_account_type_income,FALSE
+thai_rjc_41300,รายได้จากการขายวัตถุดิบ,41300,thai_rjc_41000,Regular,account.data_account_type_income,FALSE
+thai_rjc_41400,รายได้จากการฝากขายสินค้า,41400,thai_rjc_41000,Regular,account.data_account_type_income,FALSE
+thai_rjc_41500,รายได้จากการบริการ,41500,thai_rjc_41000,Regular,account.data_account_type_income,FALSE
+thai_rjc_41600,ส่วนลดการค้าจากการขาย,41600,thai_rjc_41000,Regular,account.data_account_type_income,FALSE
+thai_rjc_41610,ส่วนลดจ่าย,41610,thai_rjc_41000,Regular,account.data_account_type_income,FALSE
+thai_rjc_41700,รับคืนสินค้า,41700,thai_rjc_41000,Regular,account.data_account_type_income,FALSE
+thai_rjc_42000,รายได้อื่น,42000,thai_rjc_40000,View,account.data_account_type_view,FALSE
+thai_rjc_42100,ดอกเบี้ยรับ,42100,thai_rjc_42000,Regular,account.data_account_type_income,FALSE
+thai_rjc_42200,กำไรจากการจำหน่ายสินทรัพย์,42200,thai_rjc_42000,Regular,account.data_account_type_income,FALSE
+thai_rjc_42300,กำไรจากอัตราแลกเปลี่ยนที่เกิดขึ้นจริง,42300,thai_rjc_42000,Regular,account.data_account_type_income,FALSE
+thai_rjc_42310,กำไรจากอัตราแลกเปลี่ยนที่ไม่เกิดขึ้นจริง,42310,thai_rjc_42000,Regular,account.data_account_type_income,FALSE
+thai_rjc_42900,รายได้อื่น,42900,thai_rjc_42000,Regular,account.data_account_type_income,FALSE
+thai_rjc_50000,ต้นทุนขาย,50000,thai_rjc_2,View,account.data_account_type_view,FALSE
+thai_rjc_51100,ต้นทุนขาย,51100,thai_rjc_50000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_51110,ต้นทุนการผลิต,51110,thai_rjc_50000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_51120,เศษซาก,51120,thai_rjc_50000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_51130,ค่าจ้างทำของ,51130,thai_rjc_50000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_51200,ค่าใช้จ่ายในการผลิต,51200,thai_rjc_50000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_51210,บัญชีปรับปรุงต้นทุน,51210,thai_rjc_50000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_52000,ต้นทุนการให้บริการ,52000,thai_rjc_50000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_53000,ส่วนลดการค้าจากการซื้อ,53000,thai_rjc_50000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_53100,ส่วนลดรับ,53100,thai_rjc_50000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_53200,ส่งคืนสินค้า,53200,thai_rjc_50000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_53300,ค่าใช้จ่ายในการนำเข้า,53300,thai_rjc_50000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_53400,ค่าหีบห่อ,53400,thai_rjc_50000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_54000,ค่าแรงงานทางตรง,54000,thai_rjc_50000,View,account.data_account_type_view,FALSE
+thai_rjc_54100,เงินเดือนโรงงาน,54100,thai_rjc_54000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_54110,ค่าจ้างแรงงานโรงงาน,54110,thai_rjc_54000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_54120,ค่าล่วงเวลาโรงงาน,54120,thai_rjc_54000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_54130,ค่าเบี้ยเลี้ยงโรงงาน,54130,thai_rjc_54000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_54140,ค่าโบนัสโรงงาน,54140,thai_rjc_54000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_54150,ค่าแรงงานเหมาโรงงาน,54150,thai_rjc_54000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_54160,ค่าจ้างเบ็ดเตล็ดโรงงาน,54160,thai_rjc_54000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_54170,ค่ารักษาพยาบาลโรงงาน,54170,thai_rjc_54000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_54180,เงินสมทบกองทุนประกันสังคมและกองทุนทดแทนโรงงาน,54180,thai_rjc_54000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_54190,เงินสมทบเงินสะสมพนักงานโรงงาน,54190,thai_rjc_54000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_54200,ค่าอบรมและสัมมนาโรงงาน,54200,thai_rjc_54000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_54210,ค่าสวัสดิการอื่นๆโรงงาน,54210,thai_rjc_54000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_55000,โสหุ้ยการผลิต,55000,thai_rjc_50000,View,account.data_account_type_view,FALSE
+thai_rjc_55100,ค่าน้ำมันหล่อลื่น,55100,thai_rjc_55000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_55200,ค่าวัสดุสิ้นเปลือง,55200,thai_rjc_55000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_55300,ค่าไฟฟ้าโรงงาน,55300,thai_rjc_55000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_55310,ค่าน้ำประปาโรงงาน,55310,thai_rjc_55000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_55320,ค่ารักษาความปลอดภัยโรงงาน,55320,thai_rjc_55000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_55340,ค่าโทรศัพท์โรงงาน,55340,thai_rjc_55000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_55400,ค่าซ๋อมบำรุงโรงงาน,55400,thai_rjc_55000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_55410,ค่าซ่อมบำรุงเครื่องจักร,55410,thai_rjc_55000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_55420,ค่าซ่อมบำรุงเครื่องมือเครื่องใช้โรงงาน,55420,thai_rjc_55000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_55430,ค่าซ่อมบำรุงอื่นๆโรงงาน,55430,thai_rjc_55000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_55900,ค่าใช้จ่ายโรงงานอื่นๆ,55900,thai_rjc_55000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_56000,บัญชีปรับปรุงสินค้าคงเหลือ,56000,thai_rjc_50000,View,account.data_account_type_view,FALSE
+thai_rjc_56100,ปรับปรุงผลแตกต่างการตรวจนับสินค้าคงเหลือ,56100,thai_rjc_56000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_56200,ปรับปรุงราคาสินค้าคงเหลือ,56200,thai_rjc_56000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_56300,ปรับปรุงผลแตกต่างราคาตลาดสินค้าคงเหลือ,56300,thai_rjc_56000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_58000,บัญชีปรับปรุงผลแตกต่างต้นทุน,58000,thai_rjc_50000,View,account.data_account_type_view,FALSE
+thai_rjc_58100,Invoice price variance,58100,thai_rjc_58000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_58200,Purchase price variance,58200,thai_rjc_58000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_58300,Purchase price variance Offset,58300,thai_rjc_58000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_58400,Using Variance,58400,thai_rjc_58000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_58500,Method Change Variance,58500,thai_rjc_58000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_58600,Rate Variance,58600,thai_rjc_58000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_58700,Mix Variance,58700,thai_rjc_58000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_58800,Average Cost Variance,58800,thai_rjc_58000,Regular,account.data_account_type_cost_of_goods_sold,FALSE
+thai_rjc_60000,ค่าใช้จ่ายขายและบริหาร,60000,thai_rjc_2,View,account.data_account_type_view,FALSE
+thai_rjc_60100,เงินเดือน ค่าจ้างและสวัสดิการพนักงาน,60100,thai_rjc_60000,View,account.data_account_type_view,FALSE
+thai_rjc_60110,เงินเดือน,60110,thai_rjc_60100,Regular,account.data_account_type_expense,FALSE
+thai_rjc_60120,ค่าจ้างแรงงาน,60120,thai_rjc_60100,Regular,account.data_account_type_expense,FALSE
+thai_rjc_60130,ค่าล่วงเวลา,60130,thai_rjc_60100,Regular,account.data_account_type_expense,FALSE
+thai_rjc_60140,ค่าเบี้ยเลี้ยง,60140,thai_rjc_60100,Regular,account.data_account_type_expense,FALSE
+thai_rjc_60150,ค่าโบนัส,60150,thai_rjc_60100,Regular,account.data_account_type_expense,FALSE
+thai_rjc_60210,ค่าแรงงานเหมา,60210,thai_rjc_60100,Regular,account.data_account_type_expense,FALSE
+thai_rjc_60220,ค่าจ้างเบ็ดเตล็ด,60220,thai_rjc_60100,Regular,account.data_account_type_expense,FALSE
+thai_rjc_60230,ค่านายหน้า,60230,thai_rjc_60100,Regular,account.data_account_type_expense,FALSE
+thai_rjc_60310,ค่ารักษาพยาบาล,60310,thai_rjc_60100,Regular,account.data_account_type_expense,FALSE
+thai_rjc_60320,เงินสมทบกองทุนประกันสังคมและกองทุนทดแทน,60320,thai_rjc_60100,Regular,account.data_account_type_expense,FALSE
+thai_rjc_60330,เงินสมทบเงินสะสมพนักงาน,60330,thai_rjc_60100,Regular,account.data_account_type_expense,FALSE
+thai_rjc_60340,ค่าอบรมและสัมมนา,60340,thai_rjc_60100,Regular,account.data_account_type_expense,FALSE
+thai_rjc_60350,ค่าสวัสดิการอื่นๆ,60350,thai_rjc_60100,Regular,account.data_account_type_expense,FALSE
+thai_rjc_60900,ค่าใช้จ่ายพนักงานอื่นๆ,60900,thai_rjc_60100,Regular,account.data_account_type_expense,FALSE
+thai_rjc_61000,ค่าใช้จ่ายในการเดินทาง,61000,thai_rjc_60000,View,account.data_account_type_view,FALSE
+thai_rjc_61100,ค่าใช้จ่ายในการเดินทาง,61100,thai_rjc_61000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_61200,ค่าใช้จ่ายในการเดินทางต่างจังหวัด,61200,thai_rjc_61000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_61300,ค่าน้ำมันรถ,61300,thai_rjc_61000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_62000,ค่าใช้จ่ายในการขนส่ง,62000,thai_rjc_60000,View,account.data_account_type_view,FALSE
+thai_rjc_62100,ค่าขนส่ง,62100,thai_rjc_62000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_62200,ค่าใช้จ่ายในการส่งออก,62200,thai_rjc_62000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_63000,ค่าใช้จ่ายส่งเสริมการขายและการตลาด,63000,thai_rjc_60000,View,account.data_account_type_view,FALSE
+thai_rjc_63100,ค่าสื่อโฆษณา,63100,thai_rjc_63000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_63200,ค่าแคตตาล็อก สื่อสิ่งพิมพ์,63200,thai_rjc_63000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_63300,ค่าสินค้าตัวอย่าง,63300,thai_rjc_63000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_63400,ค่าประกวดราคา,63400,thai_rjc_63000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_63500,ค่าใช้จ่ายส่งเสริมการขายและการตลาด,63500,thai_rjc_63000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_64000,ค่าใช้จ่ายสำนักงาน,64000,thai_rjc_60000,View,account.data_account_type_view,FALSE
+thai_rjc_64100,ค่าเช่าอาคารและสถานที่,64100,thai_rjc_64000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_64200,ค่าไฟฟ้า,64200,thai_rjc_64000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_64300,ค่าน้ำประปา,64300,thai_rjc_64000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_64400,ค่ารักษาความปลอดภัย,64400,thai_rjc_64000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_64500,ค่าเครื่องเขียนสิ่งพิมพ์,64500,thai_rjc_64000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_64600,ค่าใช้จ่ายสำนักงาน,64600,thai_rjc_64000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_64700,เครื่องถ่ายเอกสาร,64700,thai_rjc_64000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_65000,ค่าโทรศัพท์และการสื่อสาร,65000,thai_rjc_60000,View,account.data_account_type_view,FALSE
+thai_rjc_65100,ค่าโทรศัพท์,65100,thai_rjc_65000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_65200,ค่าอินเตอร์เน็ต,65200,thai_rjc_65000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_65300,ค่าไปรษณีย์และอากรแสตมป์,65300,thai_rjc_65000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_66000,ค่าสมาชิกและวารสารสิ่งพิมพ์,66000,thai_rjc_60000,View,account.data_account_type_view,FALSE
+thai_rjc_66100,ค่าวารสารสิ่งพิมพ์,66100,thai_rjc_66000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_66200,ค่าสมาชิกต่างๆ,66200,thai_rjc_66000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_67000,ค่าซ่อมแซมบำรุงรักษา,67000,thai_rjc_60000,View,account.data_account_type_view,FALSE
+thai_rjc_67100,ค่าซ่อมบำรุงสำนักงานและเครื่องใช้สำนักงาน,67100,thai_rjc_67000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_67200,ค่าซ่อมบำรุงยานพาหนะ,67200,thai_rjc_67000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_67900,ค่าซ่อมบำรุงอื่นๆ,67900,thai_rjc_67000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_68000,ค่าธรรมเนียมวิชาชีพ,68000,thai_rjc_60000,View,account.data_account_type_view,FALSE
+thai_rjc_68100,ค่าทำบัญชี,68100,thai_rjc_68000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_68200,ค่าตรวจสอบบัญชี,68200,thai_rjc_68000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_68900,ค่าธรรมเนียมวิชาชีพอื่นๆ,68900,thai_rjc_68000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_69000,ค่าเบี้ยประกันภัยต่างๆ,69000,thai_rjc_60000,View,account.data_account_type_view,FALSE
+thai_rjc_69100,ค่าเบี้ยประกันอัคคีภัย,69100,thai_rjc_69000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_69200,ค่าเบี้ยประกันรถยนต์,69200,thai_rjc_69000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_69900,ค่าเบี้ยประกันอื่นๆ,69900,thai_rjc_69000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_70000,ค่าธรรมเนียมธนาคารและอื่นๆ,70000,thai_rjc_60000,View,account.data_account_type_view,FALSE
+thai_rjc_70100,ค่าธรรมเนียมธนาคาร,70100,thai_rjc_70000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_70900,ค่าธรรมเนียมอื่นๆ,70900,thai_rjc_70000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_71000,ค่าเสื่อมราคาและการตัดจำหน่าย,71000,thai_rjc_60000,View,account.data_account_type_view,FALSE
+thai_rjc_71319,ค่าเสื่อมราคาสะสมอาคารและสิ่งปลูกสร้าง,71319,thai_rjc_71000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_71329,สิทธิการเช่าตัดจำหน่ายสะสม,71329,thai_rjc_71000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_71339,ค่าเสื่อมราคาสะสมเครื่องจักร,71339,thai_rjc_55000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_71349,ค่าเสื่อมราคาสะสมเครื่องมือและอุปกรณ์โรงงาน,71349,thai_rjc_55000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_71359,ค่าเสื่อมราคาสะสมเครื่องตกแต่งและเครื่องใช้สำนักงาน,71359,thai_rjc_71000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_71369,ค่าเสื่อมราคาสะสมคอมพิวเตอร์,71369,thai_rjc_71000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_71379,ค่าเสื่อมราคาสะสมซอฟท์แวร์,71379,thai_rjc_71000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_71389,ค่าเสื่อมราคาสะสมยานพาหนะ,71389,thai_rjc_71000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_72000,ค่าภาษีและลิขสิทธิ,72000,thai_rjc_60000,View,account.data_account_type_view,FALSE
+thai_rjc_72100,ค่าลิขสิทธิ์,72100,thai_rjc_72000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_72200,ค่าภาษีบำรุงท้องที่,72200,thai_rjc_72000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_72300,ค่าภาษีโรงเรือน,72300,thai_rjc_72000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_72400,ค่าภาษีป้าย,72400,thai_rjc_72000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_72900,ค่าภาษีอื่นๆ,72900,thai_rjc_72000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_72990,ภาษีเงินได้นิติบุคคล,72990,thai_rjc_72000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_73000,ค่าใช้จ่ายการในการดำเนินงานอื่นๆ,73000,thai_rjc_60000,View,account.data_account_type_view,FALSE
+thai_rjc_73110,หนี้สูญ,73110,thai_rjc_73000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_73120,ค่าเรียกเก็บหนี้,73120,thai_rjc_73000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_73130,เงินบริจาค,73130,thai_rjc_73000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_73140,ค่ารับรอง,73140,thai_rjc_73000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_73160,ค่าปรับภาษีอากรและเบี้ยปรับทั่วไป,73160,thai_rjc_73000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_73190,ค่าใช้จ่ายเบ็ดเตล็ด,73190,thai_rjc_73000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_73210,ดอกเบี้ยจ่าย,73210,thai_rjc_73000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_73220,เงินปันผลจ่าย,73220,thai_rjc_73000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_73230,ขาดทุนจากการจำหน่ายสินทรัพย์,73230,thai_rjc_73000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_73240,ขาดทุนจากอัตราแลกเปลี่ยนที่เกิดขึ้นจริง,73240,thai_rjc_73000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_73250,ขาดทุนจากอัตราแลกเปลี่ยนที่ไม่เกิดขึ้นจริง,73250,thai_rjc_73000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_74000,ค่าใช้จ่ายบวกกลับ,74000,thai_rjc_60000,View,account.data_account_type_view,FALSE
+thai_rjc_74100,เงินสดย่อยเกิน (ขาด),74100,thai_rjc_74000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_74200,ค่าใช้จ่ายไม่ให้ถือเป็นรายจ่าย,74200,thai_rjc_74000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_74300,เบี้ยปรับเงินเพิ่มตามประมวลรัษฎากร,74300,thai_rjc_74000,Regular,account.data_account_type_expense,FALSE
+thai_rjc_74900,บัญชีพัก,74900,thai_rjc_74000,Regular,account.data_account_type_expense,FALSE

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        
+        <record id="view_picking_search_ext" model="ir.ui.view">
+            <field name="name">view.picking.search.ext</field>
+            <field name="inherit_id" ref="stock.view_picking_internal_search" />
+            <field name="model">stock.picking</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/search/group/filter[@string='Status']" position="before">
+                        <filter string="Route" name="by_route" domain="[]"  context="{'group_by':'route_id'}"/>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+        
+     	<record id="view_picking_tree_ext" model="ir.ui.view">
+            <field name="name">view.picking.tree.ext</field>
+            <field name="inherit_id" ref="stock.vpicktree" />
+            <field name="model">stock.picking</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/tree/field[@name='partner_id']" position="after">
+                    	<field name="route_id"/>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+                
+       	<record id="view_picking_form_ext" model="ir.ui.view">
+            <field name="name">stock.picking.form.ext</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/sheet/group/group/field[@name='backorder_id']" position="after">
+                    <field name="route_id" />
+                </xpath>            
+        	</field>
+        </record>
+        
+	</data>
+</openerp>

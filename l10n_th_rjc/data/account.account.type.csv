@@ -1,0 +1,23 @@
+id,name,code,report_type,close_method,note
+account.data_account_type_root_view,Root/View,view,/,None,this is for financial report grouping
+account.data_account_type_view,View,view,/,None,this is for summary account
+account.data_account_type_asset,Asset,asset,Balance Sheet (Asset account),Balance,
+account.data_account_type_cash,Cash,cash,Balance Sheet (Asset account),Balance,
+account.data_account_type_bank,Bank,bank,/,Balance,
+account.data_account_type_receivable,Receivable,receivable,Balance Sheet (Asset account),Unreconciled,
+account.data_account_type_input_tax,Input Tax,input tax,Balance Sheet (Asset account),Balance,
+account.data_account_type_current_assets,Current Assets,CA,Balance Sheet (Asset account),Balance,
+account.data_account_type_fixed_assets,Fixed Assets,FA,Balance Sheet (Asset account),Balance,
+account.data_account_type_non_current_assets,Non Current Assets,NCA,Balance Sheet (Asset account),Balance,
+account.data_account_type_liability,Liability,liability,Balance Sheet (Liability account),Balance,
+account.data_account_type_payable,Payable,payable,Balance Sheet (Liability account),Unreconciled,
+account.data_account_type_output_tax,Output Tax,output tax,Balance Sheet (Liability account),Balance,
+account.data_account_type_current_liabilities,Current Liabilities,CL,Balance Sheet (Liability account),Balance,
+account.data_account_type_non_current_liabilities,Non Current Liabilities,NCL,Balance Sheet (Liability account),Balance,
+account.data_account_type_equity,Equity,equity,Balance Sheet (Liability account),Balance,
+account.data_account_type_income,Income,income,Profit & Loss (Income account),None,
+account.data_account_type_cost_of_goods_sold,Expense,expense,Profit & Loss (Expense account),None,
+account.data_account_type_cost_of_service,Expense,expense,Profit & Loss (Expense account),None,
+account.data_account_type_expense,Expense,expense,Profit & Loss (Expense account),None,
+account.data_account_type_other,Other,other,/,Balance,
+account.data_account_type_reconciled,Reconciled,reconciled,/,Unreconciled,

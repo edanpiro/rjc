@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<!-- Inherited Partner -->
+        <record id="view_partner_form_ext" model="ir.ui.view">
+            <field name="name">view.partner.form.ext</field>
+            <field name="inherit_id" ref="base.view_partner_form" />
+            <field name="model">res.partner</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/form/sheet/group/group//field[@name='title']" position="after">
+                        <field name="route_id"/>                    
+                    </xpath>                         
+                </data>
+            </field>
+        </record>
+	</data>
+</openerp>

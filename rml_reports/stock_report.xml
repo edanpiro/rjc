@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <report auto="False" header="True" id="report_picking_list_out_rjc" model="stock.picking" name="stock.picking.list.rjc"
+                rml="rml_reports/stock/picking.rml" string="Delivery Slip (RJC)"
+                usage="default"/>
+        
+<!--         <report auto="False" header="True" id="report_picking_list_int_rjc" model="stock.picking" name="stock.picking.list.int.rjc" -->
+<!--                 rml="rml_reports/stock/picking.rml" string="Picking Slip (RJC)" -->
+<!--                 usage="default"/> -->
+                
+    </data>
+</openerp>

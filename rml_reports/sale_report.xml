@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <report auto="False" id="report_sale_order_rjc" model="sale.order" name="sale.order.rjc"
+                rml="rml_reports/sale/sale_order.rml" string="Quotation / Order (RJC)"
+                usage="default"/>
+
+    </data>
+</openerp>

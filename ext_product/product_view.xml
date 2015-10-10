@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+    
+        <record id="product_normal_form_view_inherit_ext" model="ir.ui.view">
+            <field name="name">product.normal.form.view.ext</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            <field name="model">product.template</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='default_code']" position="after">
+					<field name="mt_code"/>
+                </xpath>
+            </field>
+        </record>
+        
+    </data>
+</openerp>

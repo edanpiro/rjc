@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+    
+    	<!-- Partner Route -->
+        <record id="partner_route_form_view" model="ir.ui.view">
+            <field name="name">partner.route.form.view</field>
+            <field name="model">partner.route</field>
+            <field name="arch" type="xml">
+                <form string="Partner Route">
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        
+        <record id="partner_route_form_action" model="ir.actions.act_window">
+            <field name="name">Partner Route</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">partner.route</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a new Partner Route.
+              </p>
+              <p>
+              	Partner Route is the master data used for customers
+              </p>
+            </field>
+        </record>
+        
+        <menuitem action="partner_route_form_action" id="menu_partner_route_form_action" parent="base.menu_config_address_book" sequence="25" groups="base.group_no_one"/>
+
+	</data>
+</openerp>

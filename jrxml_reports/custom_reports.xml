@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+    <report string="Invoices (RJC)"
+        model="account.invoice"
+        auto="True"
+        name="account.invoice.rjc"
+        rml="jrxml_reports/custom_reports/rjc_invoice.jrxml"
+        id="report_account_invoice_rjc" 
+        menu="True"
+        header="False"
+        />
+
+    <report string="Billings (RJC)"
+        model="account.billing"
+        auto="True"
+        name="account.billing.rjc"
+        rml="jrxml_reports/custom_reports/rjc_billing.jrxml"
+        id="report_account_billing_rjc" 
+        menu="True"
+        header="False"
+        />       
+
+    <report string="Billings (Big-C)"
+        model="account.billing"
+        auto="True"
+        name="account.billing.mt.rjc"
+        rml="jrxml_reports/custom_reports/rjc_billing_mt.jrxml"
+        id="report_account_billing_mt_rjc" 
+        menu="True"
+        header="False"
+        />       
+        
+    <report string="Purchase Order (RJC)"
+        model="purchase.order"
+        auto="True"
+        name="purchase.order.rjc"
+        rml="jrxml_reports/custom_reports/rjc_purchase_order.jrxml"
+        id="report_purchase_order_rjc" 
+        menu="True"
+        header="False"
+        />           
+
+    <report string="Tax Invoice (RJC)"
+        model="account.invoice"
+        auto="True"
+        name="tax.invoice.rjc"
+        rml="jrxml_reports/custom_reports/rjc_tax_invoice.jrxml"
+        id="report_tax_invoice_rjc" 
+        menu="True"
+        header="False" 
+        />           
+
+    <report string="Tax Invoice (Big-C)"
+        model="account.invoice"
+        auto="True"
+        name="tax.invoice.mt.rjc"
+        rml="jrxml_reports/custom_reports/rjc_tax_invoice_mt.jrxml"
+        id="report_tax_invoice_mt_rjc" 
+        menu="True"
+        header="False" 
+        />           
+
+    <report string="Receipt (RJC)" 
+        model="account.voucher"
+        auto="True"
+        name="receipt.rjc"
+        rml="jrxml_reports/custom_reports/rjc_receipt.jrxml"
+        id="report_receipt_rjc" 
+        menu="True"
+        header="False" 
+        />           
+
+
+    <report string="Credit Note (RJC)" 
+        model="account.invoice"
+        auto="True"
+        name="rjc.credit.note"
+        rml="jrxml_reports/custom_reports/rjc_credit_note.jrxml"
+        id="rec_credit_note" 
+        menu="True"
+        header="False" 
+        />            
+
+    <report string="Payment Voucher (New)"
+        model="account.voucher"
+        auto="False"
+        name="payment.voucher.rjc"
+        rml="jrxml_reports/custom_reports/rjc_payment_voucher.jrxml"
+        id="report_rjc_payment_voucher"
+        menu="True"
+        header="False"
+    	attachment="" 
+        groups="" 
+    />
+        	
+</data>
+</openerp>

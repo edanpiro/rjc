@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        
+        <record id="view_move_search_ext" model="ir.ui.view">
+            <field name="name">view.move.search.ext</field>
+            <field name="inherit_id" ref="stock.view_move_search" />
+            <field name="model">stock.move</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/search/group/filter[@name='by_product']" position="before">
+                        <filter string="Partner" name="by_partner" domain="[]"  context="{'group_by':'partner_id'}"/>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+        <record id="view_picking_search_ext" model="ir.ui.view">
+            <field name="name">view.picking.search.ext</field>
+            <field name="inherit_id" ref="stock.view_picking_internal_search" />
+            <field name="model">stock.picking</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/search/filter[@name='backorder']" position="after">
+	                    <separator/>
+<!-- 	                    <filter name="is_printed" string="Not Printed" domain="[('printed','=',False)]"/> -->
+                    </xpath>
+                    <xpath expr="/search/group/filter[@string='Status']" position="before">
+                        <filter string="Partner" name="by_partner" domain="[]"  context="{'group_by':'partner_id'}"/>
+<!--                         <filter string="Printed?" name="by_printed" domain="[]"  context="{'group_by':'printed'}"/> -->
+                    </xpath>
+                </data>
+            </field>
+        </record>
+        
+        <record id="view_move_picking_tree_ext" model="ir.ui.view">
+            <field name="name">view.move.picking.tree.ext</field>
+            <field name="inherit_id" ref="stock.view_move_picking_tree" />
+            <field name="model">stock.move</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/tree/field[@name='product_id']" position="after">
+                    	<field name="name"/>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+      
+<!--         <record id="view_picking_tree_ext" model="ir.ui.view"> -->
+<!--             <field name="name">view.picking.tree.ext</field> -->
+<!--             <field name="inherit_id" ref="stock.vpicktree" /> -->
+<!--             <field name="model">stock.picking</field> -->
+<!--             <field name="arch" type="xml"> -->
+<!--                 <data> -->
+<!--                     <xpath expr="/tree/field[@name='state']" position="after"> -->
+<!--                     	<field name="printed"/> -->
+<!--                     </xpath> -->
+<!--                 </data> -->
+<!--             </field> -->
+<!--         </record> -->
+        
+       	<record id="view_picking_form_ext" model="ir.ui.view">
+            <field name="name">stock.picking.form.ext</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/header//button[@name='%(stock.act_stock_return_picking)d']" position="after">
+                    <button name="%(rml_reports.report_picking_list_out_rjc)d" string="Print Delivery Slip" type="action" states="done" class="oe_highlight"/>
+                </xpath>
+<!--                 <xpath expr="/form/sheet/group/group/field[@name='stock_journal_id']" position="after"> -->
+<!--                     <field name="printed" /> -->
+<!--                 </xpath>             -->
+        	</field>
+        </record>
+        
+        <!-- Hide buttons if not Internal Move -->
+        <record id="view_move_form_ext" model="ir.ui.view">
+            <field name="name">view.move.form.ext</field>
+            <field name="inherit_id" ref="stock.view_move_form" />
+            <field name="model">stock.move</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/form/header/button[@name='action_confirm']" position="replace">
+                    	<button name="action_confirm" states="draft" string="Process Later" type="object" class="oe_highlight" invisible="context.get('picking_type',False) not in ['internal']"/>
+                    </xpath>
+                    <xpath expr="/form/header/button[@name='action_done']" position="replace">
+	                    <button name="action_done" states="draft,assigned,confirmed" string="Process Entirely" type="object" class="oe_highlight" invisible="context.get('picking_type',False) not in ['internal']"/>
+                    </xpath>
+                    <xpath expr="/form/header/button[@name='force_assign']" position="replace">
+	                    <button name="force_assign" states="confirmed" string="Set Available" type="object" class="oe_highlight" invisible="context.get('picking_type',False) not in ['internal']"/>
+                    </xpath>
+                    <xpath expr="/form/header/button[@name='action_cancel']" position="replace">
+	                    <button name="action_cancel" states="assigned,confirmed" string="_Cancel" type="object" invisible="context.get('picking_type',False) not in ['internal']"/>
+                    </xpath>
+            	</data>
+            </field>
+        </record>
+        
+<!--          <xpath expr="/form/header/button[@name='%(stock.action_partial_move_server)d']" position="replace"> -->
+<!--                     	<button name="%(stock.action_partial_move_server)d" string="Process Partially" type="action" states="assigned" class="oe_highlight" invisible="context.get('picking_type',False) not in ['internal']"/> -->
+<!--                     </xpath> -->
+        
+        <!-- Adding search by Customer -->
+<!--         <record id="view_picking_search" model="ir.ui.view"> -->
+<!--             <field name="name">stock.picking.search.inherit</field> -->
+<!--             <field name="model">stock.picking</field> -->
+<!--             <field name="inherit_id" ref="stock.view_picking_internal_search"/> -->
+<!--             <field name="arch" type="xml"> -->
+<!--                 <xpath expr="/search/field[@name='name']" position="after"> -->
+<!--                     <field name="partner_id"/> -->
+<!--                 </xpath> -->
+<!--             </field> -->
+<!--         </record>         -->
+
+    </data>
+</openerp>

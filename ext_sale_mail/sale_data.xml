@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data noupdate="1">
+        <!-- Email template for Confirm Order to Sales Person -->
+        <record id="confirm_order_to_sale" model="email.template">
+            <field name="name">Confirm Order to Sales Person</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="email_from"><![CDATA[No-Reply <noreply@localhost>]]></field>
+            <field name="email_to">${object.user_id and object.user_id.email or ''}</field>
+            <field name="subject">Your order ${object.name or ''} is confirmed!</field>
+            <field name="body_html"><![CDATA[
+<p>Your order <b>${object.name or ''}</b> is already confimed.</p>
+
+<p>Folloing are some details of your order,</p>
+
+<p>
+<b>Customer:</b> ${object.partner_id and object.partner_id.name or ''}<br>
+<b>Date:</b> ${object.date_order or ''}<br>
+<b>Amount:</b> ${object.amount_total or ''}<br>
+<b>Sales person:</b> ${object.user_id and object.user_id.name or ''}
+</p>]]></field>
+        </record>
+    </data>
+</openerp>
