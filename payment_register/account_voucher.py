@@ -74,7 +74,7 @@ class account_voucher(models.Model):
     def create_payment_register(self):
         # Validate Payment and Payment Detail Amount
         if self.type == 'receipt':
-            if (self.amount_total or 0.0) != (self.amount or 0.0):
+            if (round(float(self.amount_total), 2) or 0.0) != (round(float(self.amount), 2) or 0.0):
                 raise Warning(_('Unable to save!'), _('Total Amount in Payment Details must equal to Paid Amount'))
         payment_register_pool = self.env['payment.register']
         for voucher in self:
