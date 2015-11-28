@@ -22,7 +22,7 @@
 {
     'name' : 'Partner Payment Net AR/AP',
     'version' : '1.0',
-    'author' : 'Ecosoft, Kitti U.',
+    'author' : 'Ecosoft',
     'summary': 'Voucher Payment that merge customer and supplier',
     'description': '''
 Voucher Payment that merge customer and supplier.
