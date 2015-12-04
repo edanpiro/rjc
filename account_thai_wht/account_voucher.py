@@ -67,11 +67,9 @@ class account_voucher(common_voucher, models.Model):
         debit = credit = 0.0
         sign = self.type == 'payment' and -1 or 1
         for l in self.line_dr_ids:
-            if isinstance(l, dict):
-                debit += l.amount + l.amount_wht  # Add WHT
+            debit += l.amount + l.amount_wht  # Add WHT
         for l in self.line_cr_ids:
-            if isinstance(l, dict):
-                credit += l.amount + l.amount_wht  # Add WHT
+            credit += l.amount + l.amount_wht  # Add WHT
         currency = self.currency_id or self.company_id.currency_id
         self.writeoff_amount = currency.round(self.amount - sign * (credit - debit))
 
