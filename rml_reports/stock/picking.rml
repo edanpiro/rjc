@@ -150,9 +150,9 @@
     <blockTable colWidths="269.0,269.0" style="Table_Address_detail">
       <tr>
         <td>
-          <para style="terp_default_Bold_10">Supplier Invoice Address : [[ (picking.type == 'in' or removeParentNode('para')) and '' ]]</para>
-          <para style="terp_default_Bold_10">Customer Invoice Address : [[ (picking.type == 'out' or removeParentNode('para')) and '' ]]</para>
-          <para style="terp_default_Bold_10">Warehouse Invoice Address : [[ (picking.type == 'internal' or removeParentNode('para')) and '' ]]</para>
+          <para style="terp_default_Bold_10">Supplier Invoice Address : [[ (picking.picking_type_id.code == 'incoming' or removeParentNode('para')) and '' ]]</para>
+          <para style="terp_default_Bold_10">Customer Invoice Address : [[ (picking.picking_type_id.code == 'outgoing' or removeParentNode('para')) and '' ]]</para>
+          <para style="terp_default_Bold_10">Warehouse Invoice Address : [[ (picking.picking_type_id.code == 'internal' or removeParentNode('para')) and '' ]]</para>
           <para style="terp_default_10">[[ display_invoice_address(picking) ]]</para>
         </td>
         <td>
@@ -170,9 +170,9 @@
     <blockTable colWidths="538.0" style="Table_Title_String">
       <tr>
         <td>
-          <para style="terp_header">Delivery Order : [[ (picking.type == 'out' or removeParentNode('para')) and '' ]] [[ picking.name ]] ([[ get_state_value(picking.state)]])</para>
-          <para style="terp_header">Incoming Shipment : [[ (picking.type == 'in' or removeParentNode('para')) and '' ]] [[ picking.name ]] ([[ get_state_value(picking.state)]])</para>
-          <para style="terp_header">Internal Shipment : [[ (picking.type == 'internal' or removeParentNode('para')) and '' ]] [[ picking.name ]] ([[ get_state_value(picking.state)]])</para>
+          <para style="terp_header">Delivery Order : [[ (picking.picking_type_id.code == 'outgoing' or removeParentNode('para')) and '' ]] [[ picking.name ]] ([[ get_state_value(picking.state)]])</para>
+          <para style="terp_header">Incoming Shipment : [[ (picking.picking_type_id.code == 'incoming' or removeParentNode('para')) and '' ]] [[ picking.name ]] ([[ get_state_value(picking.state)]])</para>
+          <para style="terp_header">Internal Shipment : [[ (picking.picking_type_id.code == 'internal' or removeParentNode('para')) and '' ]] [[ picking.name ]] ([[ get_state_value(picking.state)]])</para>
         </td>
       </tr>
     </blockTable>
