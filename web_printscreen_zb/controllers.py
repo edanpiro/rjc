@@ -30,15 +30,17 @@ from openerp.addons.web.controllers.main import ExcelExport
 from openerp.addons.web.controllers.main import Export
 import re
 from cStringIO import StringIO
-from lxml  import etree
+from lxml import etree
 import trml2pdf
-import time, os
+import time
+import os
 import locale
 import openerp.tools as tools
 try:
     import xlwt
 except ImportError:
     xlwt = None
+
 
 class ZbExcelExport(ExcelExport):
     _cp_path = '/web/export/zb_excel_export'
@@ -77,7 +79,8 @@ class ZbExcelExport(ExcelExport):
                         cellvalue = re.sub("\r", " ", cellvalue)
                     if cell_value.get('number', False) and cellvalue:
                         cellvalue = float(cellvalue)
-                    if cellvalue is False: cellvalue = None
+                    if cellvalue is False:
+                        cellvalue = None
                     worksheet.write(row_index + 1, cell_index - count, cellvalue, cell_style)
                 else:
                     count += 1
@@ -87,19 +90,17 @@ class ZbExcelExport(ExcelExport):
         data = fp.read()
         fp.close()
         return data
-    
+
     @openerpweb.httprequest
     def index(self, req, data, token):
         data = json.loads(data)
         return req.make_response(
             self.from_data(data.get('headers', []), data.get('rows', [])),
-                           headers=[
-                                    ('Content-Disposition', 'attachment; filename="%s"'
-                                        % data.get('model', 'Export.xls')),
-                                    ('Content-Type', self.content_type)
-                                    ],
-                                 cookies={'fileToken': token}
-                                 )
+            headers=[('Content-Disposition', 'attachment; filename="%s"' %
+                     data.get('model', 'Export.xls')),
+                     ('Content-Type', self.content_type)],
+            cookies={'fileToken': token})
+
 
 class ExportPdf(Export):
     _cp_path = '/web/export/zb_pdf'
@@ -108,32 +109,29 @@ class ExportPdf(Export):
         'label': 'PDF',
         'error': None
     }
-    
+
     @property
     def content_type(self):
         return 'application/pdf'
-    
+
     def filename(self, base):
         return base + '.pdf'
-    
+
     def from_data(self, uid, fields, rows, company_name):
-        pageSize=[210.0,297.0]
+        pageSize = [210.0, 297.0]
         new_doc = etree.Element("report")
         config = etree.SubElement(new_doc, 'config')
+
         def _append_node(name, text):
             n = etree.SubElement(config, name)
             n.text = text
         _append_node('date', time.strftime(str(locale.nl_langinfo(locale.D_FMT).replace('%y', '%Y'))))
         _append_node('PageSize', '%.2fmm,%.2fmm' % tuple(pageSize))
         _append_node('PageWidth', '%.2f' % (pageSize[0] * 2.8346,))
-        _append_node('PageHeight', '%.2f' %(pageSize[1] * 2.8346,))
+        _append_node('PageHeight', '%.2f' % (pageSize[1] * 2.8346,))
         _append_node('PageFormat', 'a4')
         _append_node('header-date', time.strftime(str(locale.nl_langinfo(locale.D_FMT).replace('%y', '%Y'))))
         _append_node('company', company_name)
-        l = []
-        t = 0
-        temp = []
-        tsum = []
         skip_index = []
         header = etree.SubElement(new_doc, 'header')
         i = 0
@@ -150,7 +148,7 @@ class ExportPdf(Export):
             node_line = etree.SubElement(lines, 'row')
             j = 0
             for row in row_lines:
-                if not j in skip_index:
+                if j not in skip_index:
                     para = "yes"
                     tree = "no"
                     value = row.get('data', '')
@@ -168,6 +166,7 @@ class ExportPdf(Export):
         self.obj = trml2pdf.parseNode(rml, title='Printscreen')
         return self.obj
 
+
 class ZbPdfExport(ExportPdf):
     _cp_path = '/web/export/zb_pdf_export'
     
@@ -176,10 +175,10 @@ class ZbPdfExport(ExportPdf):
         data = json.loads(data)
         uid = data.get('uid', False)
         return req.make_response(self.from_data(uid, data.get('headers', []), data.get('rows', []),
-                                                data.get('company_name','')),
+                                                data.get('company_name', '')),
                                  headers=[('Content-Disposition',
                                            'attachment; filename=PDF Export'),
                                           ('Content-Type', self.content_type)],
-                                 cookies={'fileToken': int(token)})
+                                 cookies={'fileToken': token})
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
