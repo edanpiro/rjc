@@ -127,8 +127,8 @@ class ExportPdf(Export):
             n.text = text
         _append_node('date', time.strftime(str(locale.nl_langinfo(locale.D_FMT).replace('%y', '%Y'))))
         _append_node('PageSize', '%.2fmm,%.2fmm' % tuple(pageSize))
-        _append_node('PageWidth', '%.2f' % (pageSize[0] * 2.8346,))
-        _append_node('PageHeight', '%.2f' % (pageSize[1] * 2.8346,))
+        _append_node('PageWidth', '%.2f' % (pageSize[0] * 1.8346,))
+        _append_node('PageHeight', '%.2f' % (pageSize[1] * 1.8346,))
         _append_node('PageFormat', 'a4')
         _append_node('header-date', time.strftime(str(locale.nl_langinfo(locale.D_FMT).replace('%y', '%Y'))))
         _append_node('company', company_name)
