@@ -118,7 +118,7 @@ class ExportPdf(Export):
         return base + '.pdf'
 
     def from_data(self, uid, fields, rows, company_name):
-        pageSize = [210.0, 297.0]
+        pageSize = [297.0, 210.0]
         new_doc = etree.Element("report")
         config = etree.SubElement(new_doc, 'config')
 
